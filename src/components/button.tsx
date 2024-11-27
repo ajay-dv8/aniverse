@@ -1,9 +1,10 @@
+import React from "react";
 
 interface ButtonProps {
     id?: string;
     title: string;
-    rightIcon?: any ;
-    leftIcon?: any;
+    rightIcon?: string | React.ReactNode;
+    leftIcon?: string | React.ReactNode;
     containerClass?: string;
 }
 export const Button = ({id, rightIcon, leftIcon, title, containerClass }: ButtonProps) => {

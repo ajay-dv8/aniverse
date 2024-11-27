@@ -2,13 +2,13 @@ import AnimatedTitle from "./animatedTitle.tsx";
 import {Button} from "./button.tsx";
 
 interface ImageClipBoxProps {
-    clipClass: string | any;
-    src: string | any;
+    clipClass: string ;
+    src: string;
 }
 
 const ImageClipBox = ({ src, clipClass }: ImageClipBoxProps) => (
     <div className={clipClass}>
-        <img src={src} />
+        <img src={src} alt={"img"}/>
     </div>
 );
 
