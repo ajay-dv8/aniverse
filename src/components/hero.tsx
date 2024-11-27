@@ -47,7 +47,7 @@ const Hero = () => {
                     height: "100%",
                     duration: 1,
                     ease: "power1.inOut",
-                    // @ts-ignore
+                    // @ts-expect-error-com
                     onStart: () => nextVideoRef.current.play(),
                 });
 
@@ -130,7 +130,7 @@ const Hero = () => {
                     <video
                         loop
                         muted
-                        autoPlay
+                        autoPlay={false} //TODO: change autoplay to true
                         src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
                         onLoadedData={handleVideoLoad}
                         className={"absolute left-0 top-0 size-full object-cover object-center"}
