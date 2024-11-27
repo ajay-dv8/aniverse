@@ -1,10 +1,10 @@
 
 interface ButtonProps {
-    id: string;
+    id?: string;
     title: string;
-    rightIcon?: any;
+    rightIcon?: any ;
     leftIcon?: any;
-    containerClass: string;
+    containerClass?: string;
 }
 export const Button = ({id, rightIcon, leftIcon, title, containerClass }: ButtonProps) => {
     return (

@@ -2,6 +2,8 @@ import Hero from "./components/hero.tsx";
 import About from "./components/about.tsx";
 import {Navbar} from "./components/nav.tsx";
 import Features from "./components/features.tsx";
+import Story from "./components/story.tsx";
+import Contact from "./components/contact.tsx";
 
 
 const App = () => {
@@ -11,6 +13,8 @@ const App = () => {
             <Hero />
             <About />
             <Features/>
+            <Story/>
+            <Contact/>
         </main>
     )
 }
